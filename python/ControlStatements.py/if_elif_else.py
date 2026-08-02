@@ -8,3 +8,23 @@ elif a == b:
 else:
     print("a is greater than b")
     
+#example
+ori = 2008
+
+n = int(input("Enter the PIN: "))
+
+if n == ori:
+    print("PIN accepted")
+    
+    balance = 5000
+    amount = int(input("Enter withdrawal amount: "))
+
+    if amount <= balance:
+        balance = balance - amount
+        print("Withdrawal successful")
+        print("Remaining balance:", balance)
+    else:
+        print("Insufficient balance")
+
+else:
+    print("Incorrect PIN")
