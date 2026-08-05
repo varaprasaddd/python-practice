@@ -81,12 +81,7 @@ while count < n:
         count+=1
     num+=1
 
-#Variable Length Arguments (*args)
-def total(*numbers):
-    print(sum(numbers))
 
-total(10, 20)
-total(10, 20, 30, 40)
 
 #Keyword Variable Length Arguments (**kwargs)
 def details(**data):
@@ -149,6 +144,106 @@ result = list(map(lambda x:x*x, numbers))
 
 print(result)
 
+
+#Filter Function
+
+numbers = [1,2,3,4,5,6]
+
+even = list(filter(lambda x:x%2==0, numbers))
+
+print(even)
+
+#Reduce Function
+from functools import reduce
+
+numbers = [1,2,3,4]
+
+result = reduce(lambda x,y:x+y, numbers)
+
+print(result)
+
+#Nested Functions
+def outer():
+    print("Outer Function")
+
+    def inner():
+        print("Inner Function")
+
+    inner()
+
+outer()
+
+
+# Function Calling Another Function
+def add(a,b):
+    return a+b
+
+def display():
+    result = add(10,20)
+    print(result)
+
+display()
+
+
+# Anonymous Function
+cube = lambda x:x**3
+
+print(cube(3))
+
+
+# Pass Statement
+def future():
+    pass
+
+print("Program continues")
+
+# Docstrings
+def add(a,b):
+    """Returns the addition of two numbers."""
+    return a+b
+
+print(add.__doc__)
+
+
+# Function Annotations
+def add(a:int,b:int)->int:
+    return a+b
+
+print(add(5,6))
+
+
+# Multiple Return Values
+def calculate(a,b):
+    return a+b,a-b,a*b
+
+x,y,z=calculate(10,5)
+
+print(x)
+print(y)
+print(z)
+
+# Returning Lists
+def numbers():
+    return [10,20,30]
+
+print(numbers())
+
+
+#Returning Dictionaries
+def student():
+    return {
+        "name":"Vara",
+        "age":20
+    }
+
+print(student())
+
+
+# Returning Tuples
+def values():
+    return 10,20,30
+
+print(values())
 
 
 
