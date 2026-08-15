@@ -31,10 +31,20 @@ print(arr[:-1])
 print(arr[0:5])
 print(arr[-2:])
 
+#Find Maximum and Minimum
+arr = [12, 45, 7, 23, 89, 3]
+print("Max:", max(arr))
+print("Min:", min(arr))
 
+#Linear Search
 
+arr = [5, 10, 15, 20, 25]
+target = 20
 
-
+if target in arr:
+    print("Found at index:", arr.index(target))
+else:
+    print("Not found")
 
 
 
