@@ -13,7 +13,6 @@ print(arr[-1])
 num = [1,2,3,4,5]
 num[2] = 5
 print(num)
-'''
 
 #adding and removing elements
 arr = [1,2,3,4,5]
@@ -45,13 +44,62 @@ if target in arr:
     print("Found at index:", arr.index(target))
 else:
     print("Not found")
+    
+# Take input as list of strings
+words = input("Enter strings separated by space: ").split()
+
+# Print the list
+print("List of strings:", words)
+
+# Print elements one by one
+for w in words:
+    print(w)
+
+name = ["bubby","vinay","pramod","madhu","jaswanth"]
+print("bubby" in name)
+print(name.append("reddy"))
+print(name[::-1])
+
+
+numbers=[10,20,30]
+print(sum(numbers))
+print(max(numbers))
+print(min(numbers))
+print(sorted(numbers))
+print(any(numbers))
+print(all(numbers))
+r = numbers.copy()
+r = numbers[:2]
+print(r)
+
+#join arrays3
+a=[1,2]
+b=[3,4]
+print(a+b)
 
 
 
+#looping
+numbers = ["1","2","3"]
+for num in numbers:
+    print(num)
 
+for i in range(len(numbers)):
+    print(i,numbers[i])
+'''
 
-
-
-
+# 2D Arrays
+matrix=[
+[1,2,3],
+[4,5,6],
+[7,8,9]
+]
+print(matrix[1][2])
+for i in matrix:
+    for j in i:
+        print(j, end =" ")
+print()
+for row in matrix:
+    print(row[2])
 
 
