@@ -86,7 +86,6 @@ for num in numbers:
 
 for i in range(len(numbers)):
     print(i,numbers[i])
-'''
 
 # 2D Arrays
 matrix=[
@@ -103,3 +102,45 @@ for row in matrix:
     print(row[2])
 
 
+#sum of an array
+arr = [10,20,30,40]
+total = 0
+for num in range(len(arr)):
+    total = total + arr[num]
+print(total)
+
+
+#taking array as an user input
+arr = list(map(int, input().split()))
+for i in range(len(arr)):
+    print(arr[i])
+    
+print(arr)
+
+
+# Create an empty list
+n = int(input("enterr num"))
+arr = []
+
+# Take 5 inputs from user
+for i in range(n):
+    num = int(input(f"enter numner {i+1} :"))
+    arr.append(num)
+
+# Print each element
+print("You entered:")
+for i in range(len(arr)):
+    print(arr[i])
+
+# Print the whole array
+print("Final array:", arr)
+
+
+#printing max in array
+arr = [2,3,4,5]
+max = arr[0]
+for i in range(len(arr)):
+    if arr[i] > max:
+        max = arr[i]
+print(max)
+'''
