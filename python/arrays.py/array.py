@@ -143,4 +143,78 @@ for i in range(len(arr)):
     if arr[i] > max:
         max = arr[i]
 print(max)
+'
+arr = [1,0,2,0,3]
+end = 0
+
+for i in range(len(arr)):
+    if arr[i] != 0:
+        arr[end] = arr[i]
+        end += 1
+
+# Fill the rest with zeros
+while end < len(arr):
+    arr[end] = 0
+    end += 1
+print(arr)
+
+
+#getting zereos to another side of array
+arr = [1,2,3,0,4,0]
+end = len(arr)-1
+for i in range(len(arr)-1-1-1) :
+    if arr[i] != 0:
+        arr[end] = arr[i]
+        end-=1
+while end >= 0:
+    arr[end] = 0
+    end -= 1
+print(arr)
+
+
+#using two pointers
+arr = [1,2,0,4,0]
+l = 0
+r = len(arr) - 1
+
+while l < r:
+    if arr[l] != 0:
+        l += 1
+    elif arr[r] == 0:
+        r -= 1
+    else:
+        arr[l], arr[r] = arr[r], arr[l]
+        l += 1
+        r -= 1
+
+print(arr)
+
+
+
+#even or odd using bitwise operations
+n = int(input())
+if (n & 1):
+    print("odd")
+else:
+    print("even")
+    
+
+#find maximum and minimun in an array
+arr = [1,2,3,4,7]
+maximum = arr[0]
+for i in range(len(arr)):
+    if arr[i] > maximum:
+        maximum = arr[i]
+print(maximum)
+
+#min
+n = list(map(int, input().split()))
+min = n[0]
+for i in range(1,len(n)):
+    if n[i] < min:
+        min = n[i]
+print(min)
 '''
+
+
+
