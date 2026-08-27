@@ -105,6 +105,23 @@ print(social['insta'])
 #Update	      O(1)
 #Delete	      O(1)
 #Search key   O(1)
+
+#dictionaries + string
+college = "sathyabamauniii"
+one = dict()
+for i in college:
+    if i in one:
+        one[i]+=1
+    else:
+        
+        one[i] = 1
+print(one)
+
+
+college = "sathyabama"
+one = {}
+for i in college:
+    one[i] = one.get(i,0)+1
+print(one)
 '''
-print(hash("thor"))
 
